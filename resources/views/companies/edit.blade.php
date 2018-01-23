@@ -17,7 +17,7 @@
                     placeholder = "Enter Name"
                     id="company-name"
                     required
-                    name="description"
+                    name="name"
                     spellcheck="false"
                     class="form-control"
                     value="{{$company->name}}" />
