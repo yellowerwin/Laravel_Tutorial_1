@@ -108,6 +108,8 @@ class CompaniesController extends Controller
 
         $findCompany = Company::find( $company->id );
         if($findCompany->delete()){
+
+            // Redirect
             return redirect()->route('companies.index')
             ->with('success', 'Company deleted successfully');
         }
